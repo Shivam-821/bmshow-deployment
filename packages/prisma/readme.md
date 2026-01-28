@@ -1,11 +1,4 @@
-Run the following command to create mono repo:
-
-```sh
-npx create-turbo@latest
-```
---- 
-
-# Steps to create a Prisma package:
+# Steps:
 
 1. create prisma folder
 2. run `npm init -y`
@@ -51,25 +44,4 @@ npm install @prisma/client @prisma/adapter-pg dotenv pg
 "exports": {
     "./client": "./src/index.ts"
 }
-```
----
-
-# Importing the prisma package in app folder:
-
-- Now we need to import the prisma package to web folder.
-
-```
-"devDependencies": {
-    "@repo/db": "workspace:*" // if using npm or yarn just remove workspace:
-},
-```
-
-- now do the global installation (its like if we add any package to the package.json like 'express' then it will not come automatically. we need to install it).
-
-- run: `pnpm install`
-
-- now we can import the prisma package in web folder and use it.
-
-```
-import prisma from "@repo/db/client";
 ```
