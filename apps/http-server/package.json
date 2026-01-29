@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts",
+    "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -12,7 +12,8 @@
     "@repo/db": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "nodemon": "^3.1.11",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
   "type": "module",
   "dependencies": {
     "@types/express": "^5.0.6",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1"
   }
 }

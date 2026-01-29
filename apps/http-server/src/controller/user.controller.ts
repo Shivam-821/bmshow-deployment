@@ -1,14 +1,16 @@
 import prisma from "@repo/db/client";
 import { Request, Response } from "express";
 
-const singupUser = async (req: Request, res: Response) => {
-  try {
+const signupUser = async (req: Request, res: Response) => {
+    try {
+      console.log(req.body)
     const { email, password } = req.body;
     if (!email || !password) {
       return res
         .status(400)
         .json({ message: "Email and password are required" });
-    }
+      }
+      console.log(email, password)
 
     const user = await prisma.user.create({
       data: {
@@ -26,4 +28,4 @@ const singupUser = async (req: Request, res: Response) => {
   }
 };
 
-export { singupUser };
+export { signupUser };

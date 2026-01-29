@@ -1,8 +1,9 @@
 import { Router } from "express";
-import { singupUser } from "../controller/user.controller.ts";
+import { signupUser } from "../controller/user.controller.ts";
 
 const router: Router = Router();
 
-router.post("/", singupUser);
+router.route("/signup").post(signupUser);
+
 
 export default router;

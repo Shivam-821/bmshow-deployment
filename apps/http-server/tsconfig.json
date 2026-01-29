@@ -8,5 +8,6 @@
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
+    "esModuleInterop": true
   }
 }

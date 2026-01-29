@@ -73,3 +73,5 @@ npm install @prisma/client @prisma/adapter-pg dotenv pg
 ```
 import prisma from "@repo/db/client";
 ```
+
+-- now to reapeat the same thing for rest of the apps.
