@@ -5,8 +5,8 @@
     "outDir": "./dist",
     "module": "node18",
     "target": "ES2022",
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": false
   }
 }
