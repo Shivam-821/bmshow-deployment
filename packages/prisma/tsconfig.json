@@ -1,8 +1,10 @@
 {
   "extends": "@repo/typescript-config/base.json",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": false,
     "esModuleInterop": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": false,
+    "outDir": "./dist",
+    "rootDir": "."
   }
 }
